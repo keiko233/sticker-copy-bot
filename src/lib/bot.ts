@@ -4,6 +4,7 @@ import { start } from "@/bot/command/start";
 import { sticker } from "@/bot/event/sticker";
 import { getMe } from "./bot-api";
 import { getBotToken, getNextDev } from "./env";
+import { mention } from "@/bot/event/mention";
 
 class BotService {
   public bot: Bot;
@@ -20,6 +21,7 @@ class BotService {
   private register() {
     start(this.bot);
     sticker(this.bot);
+    mention(this.bot);
   }
 
   public getBot() {
