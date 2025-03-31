@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@libnyanpasu/material-design-react";
 import { getSticker } from "@/actions/query/sticker";
+import NoSSRWrapper from "@/components/no-ssr-warpper";
 import { formatError } from "@/utils/fmt";
 import AutoImage from "./_modules/auto-image";
 
@@ -22,7 +23,9 @@ export default async function StickerPage({
     <div className="grid h-dvh place-content-center">
       <Card className="w-96">
         <CardContent>
-          <AutoImage data={query} />
+          <NoSSRWrapper>
+            <AutoImage data={query} />
+          </NoSSRWrapper>
         </CardContent>
       </Card>
     </div>
