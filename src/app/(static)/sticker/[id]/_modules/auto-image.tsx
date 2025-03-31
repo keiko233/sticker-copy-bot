@@ -62,7 +62,12 @@ export default function AutoImage({ data }: { data: Sticker }) {
 
         const ouputBlob = new Blob([data], { type: "image/gif" });
 
-        setGifUrl(URL.createObjectURL(ouputBlob));
+        const reader = new FileReader();
+        reader.onloadend = () => {
+          const base64data = reader.result as string;
+          setGifUrl(base64data);
+        };
+        reader.readAsDataURL(ouputBlob);
       } catch (error) {
         console.error("Error processing video:", error);
       }
