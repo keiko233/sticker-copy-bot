@@ -1,10 +1,7 @@
-import {
-  Card,
-  CardContent,
-} from "@libnyanpasu/material-design-react";
-import Image from "next/image";
+import { Card, CardContent } from "@libnyanpasu/material-design-react";
 import { getSticker } from "@/actions/query/sticker";
 import { formatError } from "@/utils/fmt";
+import AutoImage from "./_modules/auto-image";
 
 export const dynamic = "force-dynamic";
 
@@ -25,7 +22,7 @@ export default async function StickerPage({
     <div className="grid h-dvh place-content-center">
       <Card className="w-96">
         <CardContent>
-          <Image height={512} width={512} src={query?.binary} alt="sticker" />
+          <AutoImage data={query} />
         </CardContent>
       </Card>
     </div>

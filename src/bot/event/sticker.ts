@@ -1,5 +1,6 @@
 import { getCloudflareContext } from "@opennextjs/cloudflare";
 import type { Bot } from "grammy/web";
+import prettyBytes from "pretty-bytes";
 import { getWebhookInitialValue } from "@/actions/kv";
 import { createSticker } from "@/actions/query/sticker";
 import { downloadFile } from "@/lib/bot-api";
@@ -13,7 +14,7 @@ export const sticker = async (bot: Bot) => {
 
     const sticker = ctx.message.sticker;
 
-    if (sticker?.is_animated || sticker?.is_video) {
+    if (sticker?.is_animated) {
       await ctx.reply("Animate stickers are not supported yet.");
       return;
     }
@@ -25,7 +26,9 @@ export const sticker = async (bot: Bot) => {
 
       const binary = await downloadFile(file);
 
-      const base64Data = `data:image/webp;base64,${binary.toString("base64")}`;
+      const base64Data = sticker.is_video
+        ? `data:video/webm;base64,${binary.toString("base64")}`
+        : `data:image/webp;base64,${binary.toString("base64")}`;
 
       const [result, error] = await createSticker({
         uid: ctx.update.message.from.id,
@@ -43,7 +46,7 @@ export const sticker = async (bot: Bot) => {
 
       await ctx.reply(
         array2text([
-          `Sticker Size: ${sticker.file_size}`,
+          `Sticker Size: ${prettyBytes(sticker.file_size ?? 0)}`,
           `Download Link: ${url}/sticker/${result.id}`,
         ]),
       );
