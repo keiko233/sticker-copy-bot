@@ -7,7 +7,7 @@ import Image from "next/image";
 import { useRef, useState, useTransition } from "react";
 import { Sticker } from "@/schema";
 
-const BASE_URL = "https://unpkg.com/@ffmpeg/core/dist/umd";
+const BASE_URL = "https://cdn.jsdelivr.net/npm/@ffmpeg/core/dist/umd";
 
 export default function AutoImage({ data }: { data: Sticker }) {
   const isVideo = data.binary.startsWith("data:video/webm;base64");
