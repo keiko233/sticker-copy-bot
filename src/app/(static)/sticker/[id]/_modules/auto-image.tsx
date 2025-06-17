@@ -53,6 +53,8 @@ export default function AutoImage({ data }: { data: Sticker }) {
         await ffmpegRef.current.exec([
           "-i",
           "input.webm",
+          "-vf",
+          "scale=512:512,pad=512:512:(ow-iw)/2:(oh-ih)/2:white",
           "-c:v",
           "gif",
           "output.gif",
