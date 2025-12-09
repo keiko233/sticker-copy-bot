@@ -22,7 +22,7 @@ importers:
         version: 0.2.2(@material/material-color-utilities@0.3.0)(@types/react-dom@19.0.4(@types/react@19.0.12))(@types/react@19.0.12)(class-variance-authority@0.7.1)(clsx@2.1.1)(framer-motion@12.5.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(lodash-es@4.17.21)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(tailwind-merge@3.0.2)
       '@libnyanpasu/material-design-tailwind':
         specifier: ^0.2.2
-        version: 0.2.2
+        version: 0.2.4
       ahooks:
         specifier: ^3.8.4
         version: 3.9.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -1498,8 +1498,8 @@ packages:
       react: ^19.0.0
       react-dom: ^19.0.0
 
-  '@libnyanpasu/material-design-tailwind@0.2.2':
-    resolution: {integrity: sha512-b82WhQMs03hPJr7XkM+Ijniq18y1GUQA2bVsHx7qk5aWq23LGs6c1Ob00SoEtsP07qmeREcmCA0yWSD3sV2wqA==}
+  '@libnyanpasu/material-design-tailwind@0.2.4':
+    resolution: {integrity: sha512-uooxlqmur0EgvHw9RX943dfko+VkF6/j0rB89y2K5c+p2esT1Klnn97dMVqKHRP8mgirVPuAjyFbJ7aXSSckug==}
 
   '@material/material-color-utilities@0.3.0':
     resolution: {integrity: sha512-ztmtTd6xwnuh2/xu+Vb01btgV8SQWYCaK56CkRK8gEkWe5TuDyBcYJ0wgkMRn+2VcE9KUmhvkz+N9GHrqw/C0g==}
@@ -6935,7 +6935,7 @@ snapshots:
       - lodash-es
       - tailwind-merge
 
-  '@libnyanpasu/material-design-tailwind@0.2.2': {}
+  '@libnyanpasu/material-design-tailwind@0.2.4': {}
 
   '@material/material-color-utilities@0.3.0': {}
 
