@@ -28,7 +28,7 @@ importers:
         version: 3.9.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       grammy:
         specifier: ^1.35.1
-        version: 1.35.1
+        version: 1.38.4
       kysely:
         specifier: ^0.27.6
         version: 0.27.6
@@ -1177,8 +1177,8 @@ packages:
   '@floating-ui/utils@0.2.10':
     resolution: {integrity: sha512-aGTxbpbg8/b5JfU1HXSrbH3wXZuLPJcNEcZQFMxLs3oSzgtVu6nFPkbbGGUvBcUjKV2YyB9Wxxabo+HEH9tcRQ==}
 
-  '@grammyjs/types@3.19.0':
-    resolution: {integrity: sha512-N0MS+RJG+AGSNuka1GWVj88oyK1oti4I0eQq6jGo4hic3P9MwFfnHjGQuIExZ3tlJUrZYwC/T7gk4Tu3+guJyg==}
+  '@grammyjs/types@3.22.2':
+    resolution: {integrity: sha512-uu7DX2ezhnBPozL3bXHmwhLvaFsh59E4QyviNH4Cij7EdVekYrs6mCzeXsa2pDk30l3uXo7DBahlZLzTPtpYZg==}
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -3032,6 +3032,15 @@ packages:
       supports-color:
         optional: true
 
+  debug@4.4.3:
+    resolution: {integrity: sha512-RGwwWnwQvkVfavKVt22FGLw+xYSdzARwm0ru6DhTVA3umU5hZc28V3kO4stgYryrTlLpuvgI9GiijltAjNbcqA==}
+    engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+
   deep-eql@5.0.2:
     resolution: {integrity: sha512-h5k/5U50IJJFpzfL6nO9jaaumfjO/f2NjK/oYB2Djzm4p9L+3T9qWpZqZ2hAbLPuuYq9wrU08WQyBTL5GbPk5Q==}
     engines: {node: '>=6'}
@@ -3539,8 +3548,8 @@ packages:
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
 
-  grammy@1.35.1:
-    resolution: {integrity: sha512-6kNMODaXVj0R+dqYcHqMyjOURsCUFGvVkd7z/dDO1H1cqrGW/kyAFc4oETUKkcyUN/X80N0DchNVuc2JmTPxPQ==}
+  grammy@1.38.4:
+    resolution: {integrity: sha512-z07Kin3HgRwMdy40KUs+c9fmNBvGlSxGwcqY8NAH0a8KULGFYEMQaFAo3ge0V5tvmgr02Jgubkf54KjHLAMCbw==}
     engines: {node: ^12.20.0 || >=14.13.1}
 
   graphemer@1.4.0:
@@ -6187,7 +6196,7 @@ snapshots:
       '@babel/parser': 7.26.10
       '@babel/template': 7.26.9
       '@babel/types': 7.26.10
-      debug: 4.4.0
+      debug: 4.4.3
       globals: 11.12.0
     transitivePeerDependencies:
       - supports-color
@@ -6680,7 +6689,7 @@ snapshots:
 
   '@floating-ui/utils@0.2.10': {}
 
-  '@grammyjs/types@3.19.0': {}
+  '@grammyjs/types@3.22.2': {}
 
   '@humanfs/core@0.19.1': {}
 
@@ -8146,7 +8155,7 @@ snapshots:
       '@typescript-eslint/types': 8.27.0
       '@typescript-eslint/typescript-estree': 8.27.0(typescript@5.8.2)
       '@typescript-eslint/visitor-keys': 8.27.0
-      debug: 4.4.0
+      debug: 4.4.3
       eslint: 9.23.0(jiti@2.4.2)
       typescript: 5.8.2
     transitivePeerDependencies:
@@ -8161,7 +8170,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/typescript-estree': 8.27.0(typescript@5.8.2)
       '@typescript-eslint/utils': 8.27.0(eslint@9.23.0(jiti@2.4.2))(typescript@5.8.2)
-      debug: 4.4.0
+      debug: 4.4.3
       eslint: 9.23.0(jiti@2.4.2)
       ts-api-utils: 2.1.0(typescript@5.8.2)
       typescript: 5.8.2
@@ -8174,7 +8183,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/types': 8.27.0
       '@typescript-eslint/visitor-keys': 8.27.0
-      debug: 4.4.0
+      debug: 4.4.3
       fast-glob: 3.3.3
       is-glob: 4.0.3
       minimatch: 9.0.5
@@ -8455,7 +8464,7 @@ snapshots:
     dependencies:
       bytes: 3.1.2
       content-type: 1.0.5
-      debug: 4.4.0
+      debug: 4.4.3
       http-errors: 2.0.0
       iconv-lite: 0.5.2
       on-finished: 2.4.1
@@ -8662,6 +8671,10 @@ snapshots:
       ms: 2.1.2
 
   debug@4.4.0:
+    dependencies:
+      ms: 2.1.3
+
+  debug@4.4.3:
     dependencies:
       ms: 2.1.3
 
@@ -8968,7 +8981,7 @@ snapshots:
   eslint-import-resolver-typescript@3.9.1(eslint-plugin-import@2.31.0)(eslint@9.23.0(jiti@2.4.2)):
     dependencies:
       '@nolyfill/is-core-module': 1.0.39
-      debug: 4.4.0
+      debug: 4.4.3
       eslint: 9.23.0(jiti@2.4.2)
       get-tsconfig: 4.10.0
       is-bun-module: 1.3.0
@@ -9249,7 +9262,7 @@ snapshots:
 
   finalhandler@2.1.0:
     dependencies:
-      debug: 4.4.0
+      debug: 4.4.3
       encodeurl: 2.0.0
       escape-html: 1.0.3
       on-finished: 2.4.1
@@ -9410,11 +9423,11 @@ snapshots:
 
   graceful-fs@4.2.11: {}
 
-  grammy@1.35.1:
+  grammy@1.38.4:
     dependencies:
-      '@grammyjs/types': 3.19.0
+      '@grammyjs/types': 3.22.2
       abort-controller: 3.0.0
-      debug: 4.4.0
+      debug: 4.4.3
       node-fetch: 2.7.0
     transitivePeerDependencies:
       - encoding
@@ -10319,7 +10332,7 @@ snapshots:
 
   send@1.1.0:
     dependencies:
-      debug: 4.4.0
+      debug: 4.3.6
       destroy: 1.2.0
       encodeurl: 2.0.0
       escape-html: 1.0.3
