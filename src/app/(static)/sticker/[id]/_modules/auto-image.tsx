@@ -62,7 +62,10 @@ export default function AutoImage({ data }: { data: Sticker }) {
 
         const data = await ffmpegRef.current.readFile("output.gif");
 
-        const ouputBlob = new Blob([data], { type: "image/gif" });
+        const ouputBlob = new Blob(
+          [new Uint8Array(data as Uint8Array)],
+          { type: "image/gif" },
+        );
 
         const reader = new FileReader();
         reader.onloadend = () => {
