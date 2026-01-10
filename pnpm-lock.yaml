@@ -28,7 +28,7 @@ importers:
         version: 3.9.6(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       grammy:
         specifier: ^1.35.1
-        version: 1.38.4
+        version: 1.39.2
       kysely:
         specifier: ^0.28.0
         version: 0.28.9
@@ -1352,8 +1352,8 @@ packages:
   '@floating-ui/utils@0.2.10':
     resolution: {integrity: sha512-aGTxbpbg8/b5JfU1HXSrbH3wXZuLPJcNEcZQFMxLs3oSzgtVu6nFPkbbGGUvBcUjKV2YyB9Wxxabo+HEH9tcRQ==}
 
-  '@grammyjs/types@3.22.2':
-    resolution: {integrity: sha512-uu7DX2ezhnBPozL3bXHmwhLvaFsh59E4QyviNH4Cij7EdVekYrs6mCzeXsa2pDk30l3uXo7DBahlZLzTPtpYZg==}
+  '@grammyjs/types@3.23.0':
+    resolution: {integrity: sha512-D3jQ4UWERPsyR3op/YFudMMIPNTU47vy7L51uO9/73tMELmjO/+LX5N36/Y0CG5IQfIsz43MxiHI5rgsK0/k+g==}
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -3827,8 +3827,8 @@ packages:
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
 
-  grammy@1.38.4:
-    resolution: {integrity: sha512-z07Kin3HgRwMdy40KUs+c9fmNBvGlSxGwcqY8NAH0a8KULGFYEMQaFAo3ge0V5tvmgr02Jgubkf54KjHLAMCbw==}
+  grammy@1.39.2:
+    resolution: {integrity: sha512-7mLdNsNI2HBN1Gjombx7p3/Cjfgw/kErR/Qv3pDRw2qO/dYEdK8B9G9rpdZayNID+3qFQVTXNqxcGpG38mC2TQ==}
     engines: {node: ^12.20.0 || >=14.13.1}
 
   gzip-size@6.0.0:
@@ -7082,7 +7082,7 @@ snapshots:
 
   '@floating-ui/utils@0.2.10': {}
 
-  '@grammyjs/types@3.22.2': {}
+  '@grammyjs/types@3.23.0': {}
 
   '@humanfs/core@0.19.1': {}
 
@@ -9943,9 +9943,9 @@ snapshots:
 
   graceful-fs@4.2.11: {}
 
-  grammy@1.38.4:
+  grammy@1.39.2:
     dependencies:
-      '@grammyjs/types': 3.22.2
+      '@grammyjs/types': 3.23.0
       abort-controller: 3.0.0
       debug: 4.4.3
       node-fetch: 2.7.0
