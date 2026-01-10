@@ -30,11 +30,11 @@ importers:
         specifier: ^1.35.1
         version: 1.38.4
       kysely:
-        specifier: ^0.27.6
-        version: 0.27.6
+        specifier: ^0.28.0
+        version: 0.28.9
       kysely-d1:
         specifier: ^0.4.0
-        version: 0.4.0(kysely@0.27.6)
+        version: 0.4.0(kysely@0.28.9)
       next:
         specifier: 15.5.9
         version: 15.5.9(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
@@ -3961,9 +3961,9 @@ packages:
     peerDependencies:
       kysely: '*'
 
-  kysely@0.27.6:
-    resolution: {integrity: sha512-FIyV/64EkKhJmjgC0g2hygpBv5RNWVPyNCqSAD7eTCv6eFWNIi4PN1UvdSJGicN/o35bnevgis4Y0UDC0qi8jQ==}
-    engines: {node: '>=14.0.0'}
+  kysely@0.28.9:
+    resolution: {integrity: sha512-3BeXMoiOhpOwu62CiVpO6lxfq4eS6KMYfQdMsN/2kUCRNuF2YiEr7u0HLHaQU+O4Xu8YXE3bHVkwaQ85i72EuA==}
+    engines: {node: '>=20.0.0'}
 
   language-subtag-registry@0.3.23:
     resolution: {integrity: sha512-0K65Lea881pHotoGEa5gDlMxt3pctLi2RplBb7Ezh4rRdLEOtgi7n4EwK9lamnUCkKBqaeKRVebTq6BAxSkpXQ==}
@@ -9940,11 +9940,11 @@ snapshots:
 
   kleur@4.1.5: {}
 
-  kysely-d1@0.4.0(kysely@0.27.6):
+  kysely-d1@0.4.0(kysely@0.28.9):
     dependencies:
-      kysely: 0.27.6
+      kysely: 0.28.9
 
-  kysely@0.27.6: {}
+  kysely@0.28.9: {}
 
   language-subtag-registry@0.3.23: {}
 
