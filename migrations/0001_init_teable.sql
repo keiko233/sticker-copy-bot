@@ -1,0 +1,9 @@
+CREATE TABLE "sticker" (
+    "id" TEXT NOT NULL PRIMARY KEY,
+    "uid" INTEGER NOT NULL,
+    "name" TEXT NOT NULL,
+    "file_id" TEXT NOT NULL,
+    "file_size" INTEGER NOT NULL,
+    "created_at" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updated_at" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);

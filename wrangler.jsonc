@@ -1,0 +1,35 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "sticker-copy-bot",
+  "compatibility_date": "2025-09-02",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "@tanstack/react-start/server-entry",
+  "observability": {
+    "enabled": true,
+  },
+  "placement": { "mode": "smart" },
+  "r2_buckets": [
+    {
+      "bucket_name": "sticker-copy-bot",
+      "binding": "R2",
+    },
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "KV",
+      "id": "8f808aa2ecf04b84817f979917ecadf9",
+    },
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "sticker-copy-bot",
+      "database_id": "bc397cdc-888c-4a7b-b12c-8d22f05d2ba4",
+      "migrations_dir": "./migrations",
+    },
+  ],
+}
